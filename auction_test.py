@@ -39,7 +39,7 @@ class TestAuction(unittest.TestCase):
             self.auction.bid("Late Guy", amount + self.minIncrement)
 
 
-    @unittest.skip("Rule #3 Auction class minimum increment comparison error.")
+    # @unittest.skip("Rule #3 Auction class minimum increment comparison error.")
     def test_bid_too_low(self):
         """
         Test that the auction cannot bid with value lower than 
@@ -73,7 +73,7 @@ class TestAuction(unittest.TestCase):
             self.auction.bid("",10000 + self.minIncrement)
 
 
-    @unittest.skip("Space name should be handled as empty name.")
+    # @unittest.skip("Space name should be handled as empty name.")
     def test_bid_with_space_name(self):
         """Test that the bidder's name cannot be empty."""
         self.auction.start()
